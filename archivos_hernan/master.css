@@ -1,0 +1,458 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+    /*background-image: url(../img/bg.gif);*/
+    font-family: sans-serif;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+
+}
+
+.main-header {
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    /*border: 2px solid rgb(98, 0, 190);*/
+    width: 320px;
+    /*border-radius: 60%;*/
+    margin-bottom: 10px; 
+    align-self: flex-start;
+    position: relative;
+    left: 100px;
+}
+
+.navs {
+    width:100%;
+    display: flex;
+}
+
+.main-nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 10px 0px;
+    opacity: 0.8;
+}
+
+.main-nav a{
+    text-align: center;
+    width: 25%;
+    padding: 20px 0px 15px 0px;
+    text-decoration: none;
+    /*border-radius: 10%;*/
+    color: white;
+    background-color: rgb(159,48,41);
+    opacity: 0.8;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em; 
+
+}
+
+.user {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+  
+}
+
+.user a{
+    text-align: center;
+    width: 50%;
+    padding: 22px 0px 15px 0px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(159,48,41); 
+    opacity: 0.8; 
+    font-family: sans-serif;
+    font-size: 1em;
+    margin: 10px 0px 10px 0px;
+}
+
+.user a:hover{
+    opacity: 2;
+}
+
+.a:visited {
+    color: white;
+}
+
+
+.main-nav a:hover {
+    background-color: rgb(159,48,41);
+    opacity: 1;
+
+}
+
+.banner{
+    margin: 0px 0px 0px 0px;
+}
+
+.btn{
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+.btn:hover{
+    background-color:rgb(150, 48, 41);
+}
+
+.datos{
+    width: 594px;
+}
+
+.p-form {
+    color:  rgb(187, 46, 36);
+    text-decoration: underline;
+}
+
+.ppal{
+    background-color: rgba(159,48,41, 0.3);
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    padding: 2%;
+    margin: 0px;
+    width: 100%;
+}
+
+.user a:visited{
+    color: white;
+}
+
+fieldset{
+    /*border: 1px solid rgb(50, 50, 50);*/
+    /*border-radius: 5px;*/
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    /*background-color: rgb(150, 150, 150);*/
+    opacity: 1;
+}
+
+/*fieldset:hover{
+    background-color: rgb(98, 0, 190);
+    color: white;
+    opacity: 0.8;
+
+}*/
+fieldset label {
+    font-family: 'Josefin Sans', sans-serif;
+}
+h3{
+    text-decoration: underline;
+}
+
+input{
+    color: black;
+    font-weight: 400;
+}
+
+.form {
+    /*background-color: rgba(150, 150, 150, 0.5);*/
+    /*border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;*/
+    /*padding: 10px;*/
+    width: 100%;
+    opacity: 1;
+}
+.form form{
+    width: 100%;
+}
+
+.vip-doggos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1600px;
+}
+
+
+
+
+
+main {
+    margin: 10px 0px 10px 0px;
+}
+
+.novedades {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em; 
+    color:  rgb(187, 46, 36);
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-decoration: wavy;
+    
+}
+
+
+.main-form {
+    margin: 10px 0px 10px 0px;
+    width: 800px;
+    font-size: 0.8em;
+}
+
+.doggo {
+    max-width: 28.125%;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-form{
+    background-color: rgb(100, 100, 100);
+    opacity: 0.8;
+    color: white; 
+}
+
+.login-form:hover {
+    background-color: rgb(187, 46, 36);
+     
+}
+
+/*.new-1 {
+    position: sticky;
+    width: 100px;
+    z-index: 1000;
+    top: 1025px;
+    left: 305px;
+}
+
+.new-2 {
+    position: absolute;
+    width: 100px;
+    z-index: 1000;
+    top: 1025px;
+    left: 305px;
+}*/
+
+.doggo-pic {
+    max-width: 100%;
+    border: 4px rgb(124, 123, 123);
+    /*border-style: inset;*/
+    border-radius: 4%;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    font-size: 1em;
+}
+
+.doggo a{
+    text-align: center;
+    display: box;
+    width: 120px;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    border-radius: 4%;
+    color: white;
+    background-color:rgb(187, 46, 36);
+    opacity: 0.8; 
+    margin: 10px 0px 10px 0px;
+}
+
+.doggo a:hover{
+    background-color: rgb(124, 39, 33); 
+}
+
+.footer-nav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    color: black;
+    padding: 0px 5px 0px 5px;
+}
+
+i {
+    text-align: center;
+}
+
+/*agregado Hernan---------------------------------------*/
+
+.box-color_logo,
+.box-gray{
+	color: rgb(255,255,255);
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+	margin:0 0 25px;
+	overflow:hidden;
+	padding:15px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 20px;	
+}
+.box-color_logo {
+	background-color:rgb(187, 46, 36);
+	border:1px solid #afcde3;	
+}
+.box-gray {
+	background-color:#e2e2e2;
+	border:1px solid #bdbdbd;
+}
+/* Final Agragado Hernan----------------------------------*/
+
+
+
+
+
+/* media (max-width: 1071.98px) {
+    
+    
+    .user a{
+        width: 77.18px;
+    }
+}*/
+
+ @media (max-width: 861.98px) {
+    /*.user {
+        width: 155.09px;
+    }*/
+
+    .user a{
+        font-size: 0.8em;
+        padding: 26px 0px 15px 0px; 
+    }
+
+    .main-form{
+        width: 92.80742459396752%
+    }
+} 
+
+@media (max-width: 767.98px) {
+    /*.main-nav a{
+        width: 96px;
+        font-size: 1em;
+    }*/
+
+   
+
+    .doggo{
+        max-width: 40%;
+    }
+
+    .doggo a{
+        width: 50%;
+    }
+}
+
+
+
+@media (max-width: 575.98px) {
+    
+    .main-nav{
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+    }
+    
+    .navs {
+        flex-direction: column;
+    }
+
+    .main-nav a{
+        border-radius: 0%;
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+    .user {
+        flex-direction: column;
+        width: 100%;
+        justify-content: start;
+    }
+
+    .user a{
+        border-radius: 0%;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin: 0px;
+        font-size: 1em;
+        padding: 20px 0px 15px 0px;  
+    }
+
+    .form {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 424.98px) {
+    .main-header{
+        width: 100%;
+    }
+
+    .vip-doggos{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .doggo a{
+        align-self: center;
+    }
+
+    .banner{
+        display: none;
+    }
+    
+    .doggo{
+        max-width: 90%;
+        align-self: center;
+     
+    }
+
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .footer-nav{
+        flex-direction: column;
+    }
+
+    .footer-nav a{
+        border: none;
+
+    }
+}
