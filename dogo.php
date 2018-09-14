@@ -3,7 +3,7 @@
 include ('funciones.php');
 
 if ($_GET) {
-$pagina = __DIR__.'\\'. $_GET['pagina'].'.php';}
+$pagina = __DIR__.'//'. $_GET['pagina'].'.php';}
 else {
     header('Location: dogo.php?pagina=main');
 }

@@ -26,7 +26,7 @@ if($_POST){
                         <fieldset class="login-form">
                             <label for="user">e-Mail:</label>
                             <br>
-                            <input type="text" name="email" placeholder="Ingresá tu nombre">
+                            <input type="text" name="email" placeholder="Ingresá tu email">
                             <br>
                             <label for="password">Contraseña:</label>
                             <br>
