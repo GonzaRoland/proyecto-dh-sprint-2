@@ -17,7 +17,7 @@ if($_POST){
 
 ?>
             <section class="banner">
-                    <img src="img/bannerspring_login.jpg">
+                    <!-- <img src="img/bannerspring_login.jpg"> -->
                 </section>
             </header>
             <main>
@@ -25,15 +25,15 @@ if($_POST){
                 <div align="center">
                     <form action="" method="post">
                         <fieldset class="login-form">
-                            <label for="user">Email:</label>
+                            <label for="user">Correo Electrónico</label>
                             <br>
-                            <input type="text" name="email" placeholder="Ingresá tu Email">
+                            <input class="form-input" type="text" name="email" placeholder="Correo Electrónico">
+                            
+                            <label for="password">Contraseña</label>
                             <br>
-                            <label for="password">Contraseña:</label>
-                            <br>
-                            <input type="password" name="password" placeholder="Ingresá tu contraseña">
+                            <input class="form-input" type="password" name="password" placeholder="Contraseña">
                         </fieldset>
-                        <div align="center">
+                        <div align="center" class="login-buttons">  
                             <br>
                             <button class="btn" type="submit">ENVIAR</button>
                             <button class="btn" type="reset">BORRAR</button>
@@ -42,17 +42,7 @@ if($_POST){
                 </div>  
                 </section>
             </main>
-            <footer>
-                <nav class="footer-nav">
-                    <a href="index.html">Inicio</a>
-                    <a href="#">Productos</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Contacto</a>
-                    <a href="login.php">Login</a>
-                    <a href="registro.php">Regístrese</a>
-                </nav>
-                <i>2018 Todos los Derechos reservados.</i>
-            </footer>
+            
         </div>
     </body>
 </html>

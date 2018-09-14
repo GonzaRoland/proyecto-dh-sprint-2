@@ -51,6 +51,7 @@ if (loginController() == true) {
                 <!--<img class="logo" src="img/logo2.png">-->
                 <div class="navs">
                     <div class="nav-logo">
+                        
                         <a href="?pagina=main"><img src="img/nav-logo.png"></a>
                     </div>
                     <nav class="main-nav">

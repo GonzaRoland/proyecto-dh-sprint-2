@@ -36,66 +36,74 @@ if($_POST) {
 }
 
 ?>
-            <main class="main-form">
+            <main class="main-form">    
                 <section class="form">
-                    <p align="center" class="p-form"><strong>¡Creá tu cuenta con nosotros!</strong></p>
-                    <br>
+                    
+                    
                     <form class="datos" action="" method="POST" enctype="multipart/form-data">
-                        <fieldset class="login-form">
-                            <fieldset>
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" name="nombre" value="<?= $nombre ?>" placeholder="Escribí tu nombre">
+                        <div align="center">
+                        <fieldset class="reg-form">
+                                <h2> Creá tu cuenta con nosotros</h2>
                                 <br>
-                                <label for="apellido">Apellido:</label>
-                                <input type="text" name="apellido" value="<?= $apellido ?>" placeholder="Escribí tu apellido">
+                            
+                                <label for="nombre"></label>
+                                <input class="form-input" type="text" name="nombre" value="<?= $nombre ?>" placeholder="Nombre">
+                                
                                 <br>
+                                <label for="apellido"></label>
+                                <input class="form-input" type="text" name="apellido" value="<?= $apellido ?>" placeholder="Apellido">
+                                
                                 <br>
-                                <h3><label for="genero" name="genero">Género</label></h3>
+                                
+                                
+                                <label for="email"></label>
+                                <input class="form-input" type="email" name="email" value="<?= $email ?>" placeholder="Corre Electrónico">
+                                <?php if(isset($errores['email'])):?>
+                                <div class="alert"><p><strong><?=$errores['email']?></strong></p></div>
+                                <?php endif;?>
+                                
+                                <br>
+                                <label for="username"></label>
+                                
+                                <input class="form-input" type="text" name="username" value="<?= $username ?>" placeholder="Nombre de Usuario">
+                                <?php if(isset($errores['username'])) :?>
+                                <div class="alert"><p><strong><?= $errores['username'] ?></strong></p></div>
+                                <?php endif; ?>
+                                
+                                <br>
+                                <label for="genero" name="genero">Género</label>
+                                <br>
                                 <input type="radio" name="genero">
                                 <label for="genero" name="femenino">Femenino</label>
-                                <br>
+                                
                                 <input type="radio" name="genero">
                                 <label for="genero" name="masculino">Masculino</label>
-                                <br>
-                                <input type="radio" name="genero">
-                                <label for="genero" name="indefinido">Indefinido</label>
-                                <br>
+                                
                                 <input type="radio" name="genero">
                                 <label for="genero" name="otro">Otro</label>
                                 <br>
                                 <br>
-                                <label for="email">-Email:</label>
-                                <input type="email" name="email" value="<?= $email ?>" placeholder="Escribí tu e-Mail">
-                                <?php if(isset($errores['email'])):?>
-                                <div class="alert"><p><strong><?=$errores['email']?></strong></p></div>
-                                <?php endif;?>
+                                <label for="avatar">Foto de Perfil</label>
                                 <br>
-                                <br>
-                                <label for="username">Nombre de usuario:</label>
-                                <br>
-                                <input type="text" name="username" value="<?= $username ?>" placeholder="Elegí tu nombre de usuario">
-                                <?php if(isset($errores['username'])) :?>
-                                <div class="alert"><p><strong><?= $errores['username'] ?></strong></p></div>
-                                <?php endif; ?>
-                                <br>
-                                <br>
-                                <label for="avatar">Avatar: </label>
-                                <br>
+                                
                                 <input type="file" name="avatar">
                                 <?php if(isset($errores['avatar'])) :?>
                                 <div class="alert"><p><strong><?= $errores['avatar'] ?></strong></p></div>
                                 <?php endif; ?>
+                                
                                 <br>
                                 <br>
-                                <label for="password">Password:</label>
+                                <label for="password">Password</label>
                                 <br>
-                                <input type="password" name="password" placeholder="Elegí tu contraseña">
-                                <input type="password" name="cpassword" placeholder="Confirmá tu contraseña">
+                                <input class="form-input" type="password" name="password" placeholder="Elegí tu contraseña">
+                                <br>
+                                <input class="form-input" type="password" name="cpassword" placeholder="Confirmá tu contraseña">
                                 <?php if(isset($errores['password'])) :?>
                                 <div class="alert"><p><strong><?= $errores['password'] ?></strong></p></div>
                                 <?php endif; ?>
-                            </fieldset>
-                            <fieldset>
+                            
+                                <br>
+                                <br>
                                 <h3><label for="animals">¿Qué animales te gustan?</label></h3>
                                 <br>
                                 <label for="animals" name="gatos">Gatos</label>
@@ -108,13 +116,13 @@ if($_POST) {
                                 <input type="checkbox" name="reptiles">
                                 <label for="animals" name="peces">Peces</label>
                                 <input type="checkbox" name="peces">
-                            </fieldset>
+                            
                             <div align="center">
                                 <br>
-                                <label for="newsletter">¿Le gustaría subscribirse a nuestro correo semanal?</label>
+                                <label for="newsletter">Quiero inscribirme al newsletter semanal</label>
                                 <input type="checkbox" name="newsletter">
                                 <br>
-                                <label for="confirm">TÉRMINOS Y CONDICIONES</label>
+                                <label for="confirm">Accedo a los TÉRMINOS Y CONDICIONES</label>
                                 <input type="checkbox" name="confirm">
                                 <?php if(isset($errores['confirm'])) :?>
                                 <div class="alert"><p><strong><?= $errores['confirm'] ?></strong></p></div>
@@ -124,6 +132,7 @@ if($_POST) {
                                 <button class="btn" type="submit">ENVIAR</button>
                                 <button class="btn" type="reset">BORRAR</button>
                             </div>
+                        </div>    
                         </fieldset>
                         <br>
                     </form>
