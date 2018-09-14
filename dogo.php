@@ -35,7 +35,7 @@ if (loginController() == true) {
 <html>
     <head>
         <meta charset="utf-8">
-        <title>DOGGO SHOP</title>
+        <title>DOGO SHOP</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/reset.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
@@ -46,7 +46,7 @@ if (loginController() == true) {
 
     </head>
     <body>
-        <div class="flex-container">
+        <div class="flex-container-header">
             <header class="main-header">
                 <!--<img class="logo" src="img/logo2.png">-->
                 <div class="navs">
@@ -54,11 +54,10 @@ if (loginController() == true) {
                         <a href="?pagina=main"><img src="img/nav-logo.png"></a>
                     </div>
                     <nav class="main-nav">
-                        <!--<a href="?pagina=doggo">INICIO</a>-->
                         <a href="?pagina=catalogo">PRODUCTOS</a>
                         <a href="?pagina=servicios">SERVICIOS</a>
                         <a href="?pagina=contacto">CONTACTO</a>
-                        <a href="?pagina=frecuentes" style="width: 250px">PREGUNTAS FRECUENTES</a>
+                        <a href="?pagina=frecuentes" id="long-link">PREGUNTAS FRECUENTES</a>
                         
                     </nav>  
                     <div class="user">
@@ -66,4 +65,5 @@ if (loginController() == true) {
                         <a href="?pagina=<?=$boton2Url?>"><strong><?=$boton2Label?></strong></a>
                     </div>
                 </div>
+                </header>
                 <?php include($pagina); ?>  

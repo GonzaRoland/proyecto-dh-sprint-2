@@ -42,7 +42,7 @@ if($_POST) {
                     <br>
                     
                     <form class="datos" action="" method="POST" enctype="multipart/form-data">
-                        <fieldset class="ppal">
+                        <fieldset class="login-form">
                             <fieldset>
                                 <label for="nombre">Nombre:</label>
                                 <input type="text" name="nombre" value="<?= $nombre ?>" placeholder="Escribí tu nombre">
