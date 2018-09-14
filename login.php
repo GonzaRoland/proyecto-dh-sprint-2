@@ -22,11 +22,12 @@ if($_POST){
             </header>
             <main>
                 <section>
+                <div align="center">
                     <form action="" method="post">
                         <fieldset class="login-form">
-                            <label for="user">e-Mail:</label>
+                            <label for="user">Email:</label>
                             <br>
-                            <input type="text" name="email" placeholder="Ingresá tu email">
+                            <input type="text" name="email" placeholder="Ingresá tu Email">
                             <br>
                             <label for="password">Contraseña:</label>
                             <br>
@@ -38,6 +39,7 @@ if($_POST){
                             <button class="btn" type="reset">BORRAR</button>
                         </div>
                     </form>
+                </div>  
                 </section>
             </main>
             <footer>

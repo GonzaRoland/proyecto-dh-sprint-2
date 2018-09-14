@@ -40,7 +40,6 @@ if($_POST) {
                 <section class="form">
                     <p align="center" class="p-form"><strong>¡Creá tu cuenta con nosotros!</strong></p>
                     <br>
-                    
                     <form class="datos" action="" method="POST" enctype="multipart/form-data">
                         <fieldset class="login-form">
                             <fieldset>
