@@ -56,7 +56,7 @@ body {
 
 .main-nav {
     box-sizing: content-box;
-    width: 1300px;
+    width: 1150px;
     display: flex;
     justify-content: center;
     margin: 0px 0px 10px 0px;
@@ -65,12 +65,21 @@ body {
 
 .nav-logo {
     display: flex;
-    width: 270px;
-    justify-content: flex-end;
+    width: 300px;
+    justify-content: center;
     align-content: center;
 }
 .nav-logo a{
     align-self: center;
+    animation-duration: 0.4s;
+}
+.nav-logo a:hover{
+    align-self: flex-end;
+    
+}
+
+.nav-logo img{
+    width:80px;
 }
 
 .main-nav a{
@@ -89,9 +98,13 @@ body {
 
 }
 
+#long-link {
+    width: 250px;
+}
+
 .user {
     display: flex;
-    width: 300px;
+    width: 450px;
     justify-content: center;
   
 }
@@ -128,13 +141,56 @@ body {
 
 }
 
-.banner{
-    margin: 115px 0px 0px 0px;
-    width: 100%;
+/*.main-banner{
+    margin: 105px 0px 0px 0px;
+    max-width: 100%;
     background-color: rgb(185,44,35);
     display: flex;
-    justify-content: space-around; 
+    justify-content: center;
+    object-fit: scale-down; 
 }
+.main-banner{
+    width: 100%;
+    object-fit: scale-down;
+}*/
+
+.main-banner {
+    width:100%;
+    margin-top:111px;
+    
+}
+
+.main-banner img {
+    max-width:100%;
+    position: relative;
+    
+}
+.social-icons {
+    box-sizing: content-box;
+    margin: 15px 0 25px 0;
+    display: flex;
+    justify-content: center;
+
+     
+}
+
+.icons {
+    display: flex;;
+    width: 21.05263157894737%;
+    justify-content: space-between;
+    box-sizing: content-box;
+
+}
+
+.social-icons img {
+    width: 45px;
+    opacity: 0.7;
+    transition-duration: 0.4s;
+}
+.social-icons img:hover {
+    opacity: 1;
+}
+
 
 .btn{
     background-color: rgb(50, 50, 50);
@@ -217,6 +273,7 @@ input{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-self: center;
     max-width: 1600px;
 }
 
@@ -226,6 +283,9 @@ input{
 
 main {
     margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
 .novedades {
@@ -252,6 +312,16 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.doggo h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: #9f3029;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 55px;
+    text-shadow: yellow; 
 }
 
 .login-form{
@@ -338,7 +408,7 @@ p {
 }
 
 .box-color_link:hover {
-    width: 100%;
+    width: 500px;;
     padding: 20px 0px 20px 0px;
     opacity: 0.8;
 
@@ -468,15 +538,27 @@ i {
         width: 77.18px;
     }
 }*/
+ @media (max-width: 909.98px) {
+     .nav-logo {
+         display: none;
+     }
+     .user {
+         width: 200px;
+     }
+ }
 
  @media (max-width: 861.98px) {
     /*.user {
         width: 155.09px;
     }*/
-
+    .user{
+        flex-direction: column;
+        
+    }
     .user a{
-        font-size: 0.8em;
-        padding: 26px 0px 15px 0px; 
+    
+        margin-top: 0;
+        /*padding: 26px 0px 15px 0px;*/ 
     }
 
     .main-form{
@@ -484,13 +566,29 @@ i {
     }
 } 
 
-@media (max-width: 767.98px) {
+
+
+@media (max-width: 775.98px) {
     /*.main-nav a{
         width: 96px;
         font-size: 1em;
     }*/
+    /*.main-nav {
+        justify-content: center;
+        justify-content: space-around;
+    }
+    .main-nav a {
+        font-size: 1em;
+        width: 110px;
+    }
 
-   
+    #long-link {
+        width: 210px;
+    }*/
+
+    /*.user {
+        width: 100px;
+    }*/
 
     .doggo{
         max-width: 40%;
@@ -501,24 +599,65 @@ i {
     }
 }
 
+@media (max-width: 719.98px) {
+    
+    
+    .main-nav a{
+        width: 115px;
+    }
+    #long-link {
+        width: 230px;
+        
+    }
 
+    @media (max-width: 661.98px) {
+
+    .main-nav{
+        justify-content: space-between ;
+        width: 90%;
+    }    
+    .main-nav a{
+        width: 110px;
+        font-size: 1em;
+    }
+    #long-link {
+        width: 230px;
+    }
+    .user {
+        width: 80px;
+    }
+    .user a{
+        font-size: 0.8em;
+        width: 70px;
+    }
+    }    
 
 @media (max-width: 575.98px) {
     
     .main-nav{
         flex-direction: column;
+        box-sizing: content-box;
         width: 100%;
         margin: 10px 0px 0px 0px;
     }
     
     .navs {
+        position: absolute;
         flex-direction: column;
     }
 
     .main-nav a{
+        box-sizing: content-box;
+        height: 20px;
         border-radius: 0%;
         width: 100%;
         border-bottom: 1px solid white;
+        padding: 30px 0px 32px 0px;
+        font-size: 25px;
+    }
+
+    #long-link {
+        width: 100%;
     }
     .user {
         flex-direction: column;
@@ -532,11 +671,17 @@ i {
         border-bottom: 1px solid white;
         margin: 0px;
         font-size: 1em;
-        padding: 20px 0px 15px 0px;  
+        padding: 20px 0px 35px 0px;
+        text-decoration: none;
+      
     }
 
     .form {
         width: 100%;
+    }
+
+    .vip-doggos {
+        margin-top: 120px;
     }
 
 }
@@ -546,10 +691,11 @@ i {
         width: 100%;
     }
 
-    .vip-doggos{
+    .vip-doggos {
         display: flex;
         flex-direction: column;
         align-content: center;
+        margin-top: 150px;
     }
 
     .doggo a{
@@ -566,9 +712,10 @@ i {
      
     }
 
-    p {
+    .doggo p {
         padding-left: 10px;
         padding-right: 10px;
+        text-align: center;
     }
 
     .logo {
