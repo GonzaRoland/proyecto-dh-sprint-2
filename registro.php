@@ -138,14 +138,13 @@ if($_POST) {
                     </form>
                 </section>
             </main>
-        <footer>
+            <footer>
             <nav class="footer-nav">
-                <a href="index.html">Inicio</a>
-                    <a href="#">Productos</a>
-                    <a href="frecuentes.html">FAQ</a>
-                    <a href="#">Contacto</a>
-                    <a href="login.php">Login</a>
-                    <a href="registro.php">Regístrese</a>
+                <a href="?pagina=main">Inicio</a>
+                    <a href="?pagina=catalogo">Productos</a>
+                    <a href="?pagina=servicios">Servicios</a>
+                    <a href="?pagina=contacto">Contacto</a>
+                    <a href="?pagina=frecuentes">Preguntas Frecuentes</a>
             </nav>
             <i>2018 Todos los Derechos reservados.</i>
         </footer>

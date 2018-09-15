@@ -145,6 +145,10 @@ body {
     position: relative;
     
 }
+
+.banner-frecuentes {
+    margin-top:111px;
+}
 .social-icons {
     box-sizing: content-box;
     margin: 15px 0 25px 0;
@@ -662,10 +666,7 @@ i {
         justify-content: center;
     }
 
-    .file {
-       
-
-    }
+    
     
 
     .login-form {
@@ -701,6 +702,9 @@ i {
         margin-top: 550px;
     }
 
+    .ac-container{
+        margin-top: 700px;
+    }
     
 
 
@@ -721,7 +725,7 @@ i {
     }
 
     .banner{
-        display: none;
+        margin-top: 200px;
     }
     
     .doggo{
@@ -749,3 +753,6 @@ i {
 
     }
 }
+
+
+

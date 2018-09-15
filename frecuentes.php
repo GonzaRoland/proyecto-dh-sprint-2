@@ -1,40 +1,7 @@
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>DOGGO SHOP - Preguntas Frecuentes</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/reset.css" rel="stylesheet">
-        <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/master.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Varela+Round" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/styleAcordeonHernan.css" />
-		<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
-       
-    </head>
-    <body>
-        <div class="flex-container">
-                <header class="main-header">
-                        <!--<img class="logo" src="img/logo2.png">-->
-                        <!--<div class="navs">
-                         <nav class="main-nav">
-                            <a href="index.html">Inicio</a>
-                            <a href="#">Productos</a>
-                            <a href="frecuentes.html">FAQ</a>
-                            <a href="#">Contacto</a>
-                            <div class="user">
-                                <a href="login.html">Login</a>
-                                <a href="form.html">Regístrese</a>
-                            </div> -->
-                        ><!--</nav>
-                        <div class="user">
-                                <a href="login.html">Login</a>
-                                <a href="form.html">Regístrese</a>
-                            </div>
-                        </div>-->
-                        <section class="banner">
-                            <img src="img/bannerspring_frecuentes.jpg">
+
+                        <section class="banner-frecuentes">
+                            <img src="img/bannerspring_frecuentes_c.png">
                         </section>
                     </header>
                     <main>
@@ -53,7 +20,7 @@
 				</div>
 				<div>
 					<input id="ac-2" name="accordion-1" type="checkbox" />
-					<label for="ac-2">¿Cuanto debo vacunar a mi perro o gato y de que ?</label>
+					<label for="ac-2">¿Cuanto debo vacunar a mi perro o gato y de qué?</label>
 					<article class="ac-medium">
 						<p>Debes iniciar un plan de vacunación desde los 25 días con la vacuna para el Parvovirus, y revacunar a los 15 días; sin embargo lo mas indicado es visitar al Médico Veterinario, quien te dará el programa de vacunación completo. </p>
 					</article>
@@ -130,14 +97,13 @@
                 
                 
 			</section>
-        <footer>
+            <footer>
             <nav class="footer-nav">
-                <a href="index.html">Inicio</a> 
-                <a href="frecuentes.html">FAQ</a>
-                <a href="#">Servicios</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Sucursales</a>
-                <a href="#">Contacto</a>
+                <a href="?pagina=main">Inicio</a>
+                    <a href="?pagina=catalogo">Productos</a>
+                    <a href="?pagina=servicios">Servicios</a>
+                    <a href="?pagina=contacto">Contacto</a>
+                    <a href="?pagina=frecuentes">Preguntas Frecuentes</a>
             </nav>
             <i>2018 Todos los Derechos reservados.</i>
         </footer>
