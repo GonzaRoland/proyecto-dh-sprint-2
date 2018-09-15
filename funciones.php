@@ -60,39 +60,6 @@
 
     }
 
-    function logValidate($usuario)
-    {
-        $errores = [];
-
-        $email = trim($usuario['email']);
-        
-        if ($usuario = buscamePorEmail($email) === false || $email === "")
-        {
-            $errores['email'] = "El email ingresado es inválido o está vacío";
-            //  dd($errores);
-            //  exit;
-        }
-        // elseif ($email == "")
-        // {
-        //     $errores['email'] = "Tienes que ingresar tu email para ingresar";
-        //     dd($errores);
-        //     exit;
-        // }
-
-        $usuario = buscamePorEmail($_POST['email']);
-         //dd($usuario['password']);
-        // dd($_POST['password']);
-        if (password_verify($_POST['password'],$usuario['password']) !== true)
-        {
-            // dd('éntro');
-            $errores['password'] = "La contraseña ingresada es inválida";
-            // dd($errores);
-            // exit;
-        }
-
-        return $errores;
-    }
-
     // Registro/Login
 
     function createUser($datos){
